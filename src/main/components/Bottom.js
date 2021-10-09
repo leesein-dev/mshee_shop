@@ -1,8 +1,8 @@
 function Bottom() {
     return(
-        <div>
+        <section style={{width: "100%", height: "340px", alignItems: "center" }}>
 
-        </div>
+        </section>
     )
 }
 
