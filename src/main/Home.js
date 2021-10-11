@@ -37,6 +37,7 @@ function RandingPage() {
                             배송전날 하나하나 직접 끓여 <br/>
                             정성스럽게 만들어 보냅니다.
                         </p>
+                        <button>미즈희 스토리 ></button>
                     </div>
                     <img src={Section_1} alt={"밀크티 붓는 사진"} align={"right"} />
                 </div>
@@ -53,8 +54,12 @@ function RandingPage() {
                     <img src={Section_2} alt={"밀크티 붓는 사진"}/>
                 </div>
             </section>
-            <section style={{width: "100%", height: "744px", alignItems: "center" }}>
-
+            <section style={{width: "100%", height: "744px", alignItems: "center", backgroundColor: "#FEF2DF"}}>
+                <div style={{maxWidth: "750px", height: "100%", margin: "0 auto"}}>
+                    <p>미즈희가 추천하는<br/>밀크티 홈카페 레시피</p>
+                    <p>지금 만들어 보세요.</p>
+                    <button>레시피 보기</button>
+                </div>
             </section>
         </>
     )

@@ -6,7 +6,6 @@ function Navbar() {
         width: "100%",
         height: "68px",
         position: "absolute",
-        borderBottom: "1px solid white",
         display: "flex",
         alignItems: "center",
     }
@@ -36,15 +35,15 @@ function Navbar() {
             <div style={HEAD_STYLE}>
                 <Logo style={{width: "50px", height: "100%"}}/>
                 <div style={NAV_RIGHT}>
-                    <ul style={{ listStyle: "none", display: "flex", margin: "0", padding:"0", alignItems: "center"}}>
+                    <ul style={{ listStyle: "none", display: "flex", margin: "0", padding:"0", alignItems: "center", fontSize: "14px"}}>
                         <li>주문하기</li>
-                        <li style={{paddingLeft: "40px"}}>정기배송</li>
+                        <li style={{paddingLeft: "40px"}}>미즈희 스토리</li>
                         <li style={{paddingLeft: "40px"}}>홈카페 레시피</li>
                         <li style={{paddingLeft: "40px"}}>고객센터</li>
                     </ul>
                 </div>
                 <div style={NAV_LEFT}>
-                    <ul style={{ listStyle: "none", display: "flex", margin: "0", padding:"0", alignItems: "center" }}>
+                    <ul style={{ listStyle: "none", display: "flex", margin: "0", padding:"0", alignItems: "center", fontSize: "14px"}}>
                         <li style={{paddingRight: "40px"}}>로그인</li>
                         <li>장바구니</li>
                     </ul>
