@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Bottom from "./components/Bottom";
 import Section_1 from "../image/section_1.svg";
 import Section_2 from "../image/section_2.svg";
+import MILK_TEA_RECIPE from "../image/milk_tea_recipe.svg";
 
 function Home() {
     return(
@@ -54,11 +55,13 @@ function RandingPage() {
                     <img src={Section_2} alt={"밀크티 붓는 사진"}/>
                 </div>
             </section>
-            <section style={{width: "100%", height: "744px", alignItems: "center", backgroundColor: "#FEF2DF"}}>
-                <div style={{maxWidth: "750px", height: "100%", margin: "0 auto"}}>
+            <section style={{width: "100%", height: "500px", alignItems: "center", backgroundColor: "#FEF2DF"}}>
+                <div style={{maxWidth: "750px", height: "100%", margin: "0 auto", overflow: "hidden"}}>
                     <p>미즈희가 추천하는<br/>밀크티 홈카페 레시피</p>
                     <p>지금 만들어 보세요.</p>
                     <button>레시피 보기</button>
+                    <div style={{height: "100px"}}></div>
+                    <img src={MILK_TEA_RECIPE} alte={"다양한 밀크티 음료 사진"} style={{width: "100%"}}/>
                 </div>
             </section>
         </>
