@@ -8,6 +8,7 @@ function Navbar() {
         position: "absolute",
         display: "flex",
         alignItems: "center",
+        color: "#752007",
     }
 
     const HEAD_STYLE = {
@@ -15,14 +16,14 @@ function Navbar() {
         height: "48px",
         display: "flex",
         margin: "0 auto",
-        maxWidth: "1140px",
+        maxWidth: "750px",
     }
 
     const NAV_RIGHT = {
         height: "100%",
         display: "flex",
         flexGrow: "1",
-        paddingLeft: "80px"
+        paddingLeft: "30px"
     }
 
     const NAV_LEFT = {

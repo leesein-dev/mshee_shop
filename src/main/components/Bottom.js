@@ -11,7 +11,7 @@ function Bottom() {
             }}>
                 <div style={{
                     width: "100%",
-                    maxWidth: "1140px",
+                    maxWidth: "750px",
                     margin: "0 auto",
                     padding: "0 25px",
                     display: "flex",
@@ -30,7 +30,7 @@ function Bottom() {
             </div>
             <div style={{
                 display: "flex",
-                maxWidth: "1140px",
+                maxWidth: "750px",
                 padding: "0 25px",
                 margin: "0 auto",
                 justifyContent: "space-between",

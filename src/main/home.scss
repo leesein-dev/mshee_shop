@@ -1,0 +1,103 @@
+@import "./../index.scss";
+
+#main-page {
+
+  #home-area-1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("http://witchkitchen.co.kr/web/upload/allStore/section1.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  & > section {
+
+    width: 100%;
+    height: 744px;
+    align-items: center;
+    overflow: hidden;
+
+    & > .contents-area {
+      max-width: 750px;
+      height: 100%;
+      margin: 0 auto;
+
+      & > .text-area {
+
+        & > .title {
+          font-size: 42px;
+          font-weight: bold;
+        }
+
+        & > p {
+          letter-spacing: -1px;
+        }
+      }
+    }
+  }
+
+  #home-area-2 {
+
+    & > .contents-area {
+
+      & > .text-area {
+        position: absolute;
+        margin: 58px 0 0 33px;
+
+        & > .title {
+
+          margin: 14px 0 34px;
+        }
+
+        & > .description {
+          margin: 25px 0;
+          font-size: 16px;
+        }
+
+        & > button {
+          display: flex;
+          font-size: 14px;
+          color: $main-text-color;
+          background: none;
+          border: none;
+          padding: 0;
+          letter-spacing: -1px;
+          align-items: center;
+
+          & > svg {
+            width: 20px;
+            height: 20px;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  #home-area-3 {
+    background-color: #D8CBBB;
+    height: 680px;
+
+    & > .contents-area {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      & > .text-area {
+
+        & > p {
+          text-align: center;
+          color: #795A49;
+
+        }
+
+        & > .description {
+          margin: 40px 0 ;
+        }
+      }
+    }
+  }
+}
