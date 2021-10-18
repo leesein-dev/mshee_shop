@@ -4,12 +4,27 @@ import Bottom from "./components/Bottom";
 import Section_1 from "../image/section_1.svg";
 import Section_2 from "../image/rooibos.png";
 import * as RiIcon from "react-icons/ri";
+import { useParams } from "react-router-dom";
+import { PAGE_DATA } from "../index";
 
 function Home() {
+
+    let { page } = useParams();
+
     return(
         <>
             <Navbar/>
-            <RandingPage/>
+                {
+                    page === undefined
+                        ? <RandingPage/>
+                        : PAGE_DATA.map((data)=>{
+                            {
+                                return(
+                                    data.name === page && data.page
+                                )
+                            }
+                        })
+                }
             <Bottom/>
         </>
     )
@@ -18,7 +33,7 @@ function Home() {
 function RandingPage() {
 
     return(
-        <div id={"main-page"}>
+        <div id={"home-page"}>
             <div id={"home-area-1"}/>
             <section id={"home-area-2"}>
                 <div className={"contents-area"}>
@@ -62,10 +77,7 @@ function RandingPage() {
                         <p className={"description"}>지금 만들어 보세요.</p>
                         <button>레시피 보기</button>
                     </div>
-                    <div className={"image-area"}>
-
-                    </div>
-                    {/*<img src={MILK_TEA_RECIPE} alt={"다양한 밀크티 음료 사진"} style={{width: "100%"}}/>*/}
+                    <div className={"image-area"}></div>
                 </div>
             </section>
         </div>
