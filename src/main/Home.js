@@ -34,7 +34,11 @@ function RandingPage() {
 
     return(
         <div id={"home-page"}>
-            <div id={"home-area-1"}/>
+            <div id={"home-area-1"}>
+                <div id={"arrow-animation"}>
+                    <RiIcon.RiArrowDownSLine/>
+                </div>
+            </div>
             <section id={"home-area-2"}>
                 <div className={"contents-area"}>
                     <div className={"text-area"}>

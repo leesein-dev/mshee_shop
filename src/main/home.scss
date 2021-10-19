@@ -2,14 +2,6 @@
 
 #home-page {
 
-  #home-area-1 {
-    width: 100%;
-    height: 100vh;
-    background-image: url("http://witchkitchen.co.kr/web/upload/allStore/section1.jpg");
-    background-position: center;
-    background-size: cover;
-  }
-
   & > section {
     width: 100%;
     height: 744px;
@@ -31,6 +23,41 @@
         & > p {
           letter-spacing: -1px;
         }
+      }
+    }
+  }
+
+  #home-area-1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("http://witchkitchen.co.kr/web/upload/allStore/section1.jpg");
+    background-position: center;
+    background-size: cover;
+
+    & > #arrow-animation {
+      position: absolute;
+      left: 50%;
+      bottom: 50px;
+      animation: bounce 2s infinite;
+
+      @keyframes bounce {
+        0% {
+          transform: translateY(-50%);
+          opacity: 0;
+        }
+        50% {
+          opacity: 100%;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 0;
+        }
+      }
+
+      & > svg {
+        width: 46px;
+        height: 46px;
+        color: $main-text-color;
       }
     }
   }
